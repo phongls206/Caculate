@@ -96,7 +96,7 @@ body {
   scale: 0.5;
   transition: all 3s ease-in-out;
 }
-.banner h1::after {
+/* .banner h1::after {
   content: "";
   background-image: url(./pikachu.webp);
   background-size: cover;
@@ -117,7 +117,7 @@ body {
   height: 20px;
   position: absolute;
   clip-path: circle();
-}
+} */
 
 /* caculator good*/
 .caculator {
