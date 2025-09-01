@@ -155,7 +155,7 @@ body {
   width: calc(100% - 50px);
   margin: 0 auto;
   height: 30%;
-  background-color: green;
+  background-color: rgb(86, 109, 86);
   border-radius: 5px;
   box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2),
     inset -2px -2px 5px rgba(77, 61, 61, 0.6);
