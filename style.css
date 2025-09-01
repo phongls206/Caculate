@@ -1,0 +1,200 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  padding: 5px;
+  margin: 0;
+  background: linear-gradient(to right, #ff758c, #ff7eb3, #ff85c1, #ff91d0);
+}
+.banner {
+  position: relative;
+  background: linear-gradient(45deg, #ff6ec4, #7873f5);
+
+  border-radius: 20px;
+  width: calc(100% - 20px);
+  font-family: fantasy;
+  letter-spacing: 5px;
+  margin: 0 auto;
+  height: 50px;
+  overflow: hidden;
+  user-select: none;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.banner h1 {
+  width: 100%;
+  font-size: 20px;
+  position: absolute;
+  left: -15%;
+  text-shadow: 1px 0px 1px #cccccc, 0px 1px 1px #eeeeee, 2px 1px 1px #cccccc,
+    1px 2px 1px #eeeeee, 3px 2px 1px #cccccc, 2px 3px 1px #eeeeee,
+    4px 3px 1px #cccccc, 3px 4px 1px #eeeeee, 5px 4px 1px #cccccc,
+    4px 5px 1px #eeeeee, 6px 5px 1px #cccccc, 5px 6px 1px #eeeeee,
+    7px 6px 1px #cccccc;
+  animation: text-move 5s linear infinite, rainbow 2s linear infinite;
+  transition: all 5s ease-out;
+}
+
+@keyframes text-move {
+  0% {
+    transform: translateX(-20%) scale(1);
+  }
+  10% {
+    transform: translateX(5%) scale(1.05);
+  }
+  20% {
+    transform: translateX(15%) scale(0.95);
+  }
+  30% {
+    transform: translateX(25%) scale(1.1);
+  }
+  40% {
+    transform: translateX(35%) scale(0.9);
+  }
+  50% {
+    transform: translateX(50%) scale(1.05);
+  }
+  60% {
+    transform: translateX(65%) scale(0.95);
+  }
+  70% {
+    transform: translateX(75%) scale(1.1);
+  }
+  80% {
+    transform: translateX(85%) scale(0.9);
+  }
+  90% {
+    transform: translateX(95%) scale(1.05);
+  }
+  100% {
+    transform: translateX(110%) scale(1);
+  }
+}
+
+@keyframes rainbow {
+  0% {
+    color: rgb(255, 0, 140);
+  }
+
+  71% {
+    color: indigo;
+  }
+  85% {
+    color: violet;
+  }
+  100% {
+    color: palevioletred;
+  }
+}
+.banner h1:hover {
+  animation-play-state: paused;
+}
+.banner h1:active {
+  scale: 0.5;
+  transition: all 3s ease-in-out;
+}
+.banner h1::after {
+  content: "";
+  background-image: url(/pikachu.webp);
+  background-size: cover;
+  top: 5px;
+
+  width: 30px;
+  height: 20px;
+  position: absolute;
+  clip-path: circle();
+}
+.banner h1::before {
+  content: "";
+  background-image: url(/pikachu.webp);
+  top: 5px;
+  left: -30px;
+  background-size: cover;
+  width: 30px;
+  height: 20px;
+  position: absolute;
+  clip-path: circle();
+}
+
+/* caculator good*/
+.caculator {
+  background-color: pink;
+  border-radius: 10px;
+  width: 250px;
+  max-width: 300px;
+  min-width: 250px;
+  height: 350px;
+  margin: 0 auto;
+  margin-top: 100px;
+  max-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+
+  row-gap: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.caculator h3 {
+  text-align: center;
+  margin-bottom: -2px;
+  margin-top: 1vh;
+  color: #fff;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  position: relative;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.caculator h3::after {
+  content: "";
+  background-image: url(./dragon-ball-goku-seeklogo.svg);
+
+  background-size: cover;
+  right: -2px;
+  bottom: -10px;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  position: absolute;
+  clip-path: circle();
+}
+
+.caculator-display {
+  width: calc(100% - 50px);
+  margin: 0 auto;
+  height: 30%;
+  background-color: green;
+  border-radius: 5px;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2),
+    inset -2px -2px 5px rgba(77, 61, 61, 0.6);
+}
+
+.caculator-main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 15px;
+  column-gap: 25px;
+  margin: 0 auto;
+}
+.caculator-icon {
+  scale: 1.1;
+  border-radius: 5px;
+  min-height: 23px;
+  max-width: 35px;
+  border-color: white;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+.caculator-icon:hover {
+  transition: transform 0.1s ease-in-out;
+  transform: scale(1.07);
+  color: rgb(202, 104, 104);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
