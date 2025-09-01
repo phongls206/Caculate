@@ -98,7 +98,7 @@ body {
 }
 .banner h1::after {
   content: "";
-  background-image: url(/pikachu.webp);
+  background-image: url(./pikachu.webp);
   background-size: cover;
   top: 5px;
 
@@ -109,7 +109,7 @@ body {
 }
 .banner h1::before {
   content: "";
-  background-image: url(/pikachu.webp);
+  background-image: url(./pikachu.webp);
   top: 5px;
   left: -30px;
   background-size: cover;
