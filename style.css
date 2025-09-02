@@ -141,28 +141,27 @@ body {
 }
 
 .caculator h3 {
-  padding-left: 10px;
+  padding-left: 15px;
   display: flex;
-
+  justify-content: center;
+  gap: 10px;
   margin-bottom: -2px;
   margin-top: 1vh;
   color: #fff;
   letter-spacing: 2px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
   position: relative;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .caculator h3 button {
-  background: transparent;
+  box-sizing: border-box;
+
+  margin-top: 2px;
   border-color: white;
   background-color: white;
-
-  border-radius: 50%;
-  margin-left: 102px;
-  margin-top: -1px;
+  background-size: cover;
+  scale: 0.8;
   color: black;
-  padding-bottom: 3px;
-  font-size: 12px;
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
