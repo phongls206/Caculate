@@ -3,6 +3,7 @@
 *::before {
   box-sizing: border-box;
 }
+
 body {
   padding: 5px;
   margin: 0;
@@ -189,7 +190,7 @@ body {
   outline: none;
   /* caret-color: pink;  */
   caret-color: transparent;
-  // chinh readonly ben input de ko cho nhap mak chi doc thoi
+  /* chinh readonly ben input de ko cho nhap mak chi doc thoi */
 }
 
 /* #caculator-display::after {
@@ -253,4 +254,18 @@ body {
 }
 .error {
   animation: rainbow 2s infinite;
+}
+@media (max-width: 500px) {
+  .caculator-main::after {
+    content: "|";
+    position: absolute;
+    font-size: 26px;
+    width: 3px;
+    top: -33%;
+    right: 2.5%;
+    display: none;
+  }
+  .caculator {
+    height: 350px;
+  }
 }
