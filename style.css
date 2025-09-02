@@ -324,7 +324,7 @@ body {
     font-size: 10px;
   }
 }
-@media (max-height: 900px) {
+@media (max-height: 1200px) {
   .caculator {
     width: 300px;
   }
