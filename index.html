@@ -7,6 +7,7 @@
     <title>Caculate APP</title>
     <link rel="stylesheet" href="style.css" />
     <script defer src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.11.0/math.min.js"></script>
   </head>
   <body>
     <div class="banner">
@@ -14,7 +15,10 @@
     </div>
 
     <div class="caculator">
-      <h3>KOMODO</h3>
+      <h3 class="title">
+        KOMODO
+        <button id="power-btn">⏻</button>
+      </h3>
       <input id="caculator-display" />
       <div class="caculator-main">
         <button class="caculator-icon">Del</button>
