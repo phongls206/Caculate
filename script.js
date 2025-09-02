@@ -8,12 +8,12 @@ console.log("KOMODO CACULATOR DEMO");
 // 👉 Dùng khi cần: đồng hồ, xoá liên tục, cập nhật trạng thái... Nếu muốn kiểm soát tốt hơn, dùng setTimeout() tự gọi lại.
 // Lặp liên tục cho đến khi bị dừng bằng clearInterval().
 
-// setTimeout(() => {
-//   alert("Đây là bản demo");
-// }, 5000);
-// setTimeout(() => {
-//   alert("Sau này sẽ nâng cấp thêm tính năng");
-// }, 8000);
+setTimeout(() => {
+  alert("Đây là bản demo");
+}, 5000);
+setTimeout(() => {
+  alert("Sau này sẽ nâng cấp thêm tính năng");
+}, 8000);
 
 const display = document.getElementById("caculator-display");
 const btn = document.querySelectorAll(".caculator-icon");
