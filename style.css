@@ -152,6 +152,7 @@ body {
 
 #caculator-display {
   position: relative;
+
   width: calc(100% - 50px);
   margin: 0 auto;
   height: 30%;
@@ -160,10 +161,14 @@ body {
   box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2),
     inset -2px -2px 5px rgba(77, 61, 61, 0.6);
   z-index: 99;
+  font-size: 22px;
+  text-align: right;
   padding: 5px;
+  padding-top: 50px;
   white-space: nowrap;
   overflow-x: auto;
 }
+
 /* #caculator-display::after {
   content: "";
   background-image: url(./dragon-ball-goku-seeklogo.svg);
