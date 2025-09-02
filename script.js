@@ -35,6 +35,7 @@ power.addEventListener("click", () => {
       display.value = "0";
       active = true;
       boot = false;
+      power.style.animation = "rainbow 2s infinite";
       caculatorMain.classList.add("active");
     }, 6000);
   } else {
@@ -43,6 +44,7 @@ power.addEventListener("click", () => {
     caculatorMain.classList.remove("active");
     setTimeout(() => {
       display.value = "";
+      power.style.animation = "none";
     }, 2000);
   }
 });

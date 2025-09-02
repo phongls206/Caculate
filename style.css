@@ -302,7 +302,7 @@ body {
     font-size: 10px;
   }
 }
-.caculator::after {
+/* .caculator::after {
   position: absolute;
   background: linear-gradient(180deg, #eba6c2, #ff85c1, #ff91d0);
   content: "Lê Hồng Phong";
@@ -353,4 +353,4 @@ body {
 }
 .caculator:hover {
   --pause: paused;
-}
+} */
