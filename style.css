@@ -326,6 +326,6 @@ body {
 }
 @media (max-height: 1200px) {
   .caculator {
-    width: 300px;
+    height: 300px;
   }
 }
