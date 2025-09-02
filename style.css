@@ -126,7 +126,7 @@ body {
   border-radius: 10px;
   width: 250px;
   max-width: 300px;
-  max-height: 400px;
+  max-height: 500px;
   min-width: 200px;
   height: 350px;
   margin: 0 auto;
@@ -301,6 +301,11 @@ body {
 }
 
 @media (max-width: 480px) {
+  .caculator-main.active::after {
+    top: -40%;
+    padding-right: 5px;
+    font-size: 24px;
+  }
   .caculator {
     width: 180px;
     height: 280px;
@@ -308,7 +313,6 @@ body {
   }
   #caculator-display {
     font-size: 16px;
-    padding-top: 30px;
   }
   .caculator-main {
     gap: 8px;
