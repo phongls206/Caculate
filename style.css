@@ -303,7 +303,7 @@ body {
 @media (max-width: 480px) {
   .caculator-main.active::after {
     top: -40%;
-    padding-right: 5px;
+    padding-right: 8px;
     font-size: 24px;
   }
   .caculator {
@@ -322,5 +322,10 @@ body {
     min-height: 18px;
     text-align: center;
     font-size: 10px;
+  }
+}
+@media (max-height: 900px) {
+  .caculator {
+    width: 300px;
   }
 }
