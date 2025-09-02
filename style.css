@@ -141,7 +141,7 @@ body {
 }
 
 .caculator h3 {
-  padding-left: 15px;
+  padding-left: 20px;
   display: flex;
   justify-content: center;
   gap: 10px;
@@ -155,7 +155,6 @@ body {
 }
 .caculator h3 button {
   box-sizing: border-box;
-
   margin-top: 2px;
   border-color: white;
   background-color: white;
