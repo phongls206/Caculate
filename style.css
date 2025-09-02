@@ -187,7 +187,9 @@ body {
   text-align: right;
   overflow-x: hidden;
   outline: none;
-  caret-color: pink;
+  /* caret-color: pink;  */
+  caret-color: transparent;
+  // chinh readonly ben input de ko cho nhap mak chi doc thoi
 }
 
 /* #caculator-display::after {
