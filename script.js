@@ -51,9 +51,11 @@ btn.forEach((element) => {
   element.addEventListener("click", () => {
     if (!active) return;
     data = element.textContent;
+
     if (data === "x") {
       data = "";
       display.value += "*";
+      return;
     }
     if (data === "()") {
       data = "";
@@ -61,15 +63,16 @@ btn.forEach((element) => {
       if (countsyntax > 0 && /[0-9\)]/.test(lastChar)) {
         display.value += ")";
         countsyntax--;
-      } else if (display.value === "" || /[0-9\)]/.test(lastChar)) {
+      } else if (display.value === "" || /[0-9\%\)\+\-\*\/]/.test(lastChar)) {
         display.value += "(";
         countsyntax++;
       }
-      return;
     }
+
     if (data === "÷") {
       data = "";
       display.value += "/";
+      return;
     }
     if (data === "Del") {
       display.value = display.value.slice(0, -1);
@@ -90,7 +93,11 @@ btn.forEach((element) => {
         }
       }
     } else {
-      display.value += data;
+      if (display.value === "0") {
+        display.value = data;
+      } else {
+        display.value += data;
+      }
     }
     display.scrollLeft = display.scrollWidth;
     // Giai thich lenh nay
