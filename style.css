@@ -278,28 +278,6 @@ body {
   }
 }
 
-/* Calculator responsive */
-@media (max-width: 768px) {
-  .caculator {
-    width: 220px;
-    height: 320px;
-  }
-  #caculator-display {
-    font-size: 20px;
-    padding-top: 40px;
-  }
-  .caculator-main {
-    gap: 10px;
-    column-gap: 15px;
-  }
-  .caculator-icon {
-    font-size: 11px;
-    align-content: center;
-    min-height: 20px;
-    max-width: 30px;
-  }
-}
-
 @media (max-width: 480px) {
   .caculator-main.active::after {
     top: -40%;
