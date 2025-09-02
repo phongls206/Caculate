@@ -255,17 +255,68 @@ body {
 .error {
   animation: rainbow 2s infinite;
 }
-@media (max-width: 500px) {
-  .caculator-main::after {
-    content: "|";
-    position: absolute;
-    font-size: 26px;
-    width: 3px;
-    top: -33%;
-    right: 2.5%;
-    display: none;
+/* Banner responsive */
+@media (max-width: 768px) {
+  .banner {
+    width: calc(100% - 10px);
+    height: 40px;
+    border-radius: 15px;
   }
+  .banner h1 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner {
+    height: 35px;
+    border-radius: 10px;
+  }
+  .banner h1 {
+    font-size: 14px;
+    letter-spacing: 3px;
+  }
+}
+
+/* Calculator responsive */
+@media (max-width: 768px) {
   .caculator {
-    height: 350px;
+    width: 220px;
+    height: 320px;
+  }
+  #caculator-display {
+    font-size: 20px;
+    padding-top: 40px;
+  }
+  .caculator-main {
+    gap: 10px;
+    column-gap: 15px;
+  }
+  .caculator-icon {
+    font-size: 11px;
+    align-content: center;
+    min-height: 20px;
+    max-width: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .caculator {
+    width: 180px;
+    height: 280px;
+    margin-top: 50px;
+  }
+  #caculator-display {
+    font-size: 16px;
+    padding-top: 30px;
+  }
+  .caculator-main {
+    gap: 8px;
+    column-gap: 15px;
+  }
+  .caculator-icon {
+    min-height: 18px;
+    text-align: center;
+    font-size: 10px;
   }
 }
