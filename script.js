@@ -60,6 +60,11 @@ btn.forEach((element) => {
     if (data === "()") {
       data = "";
       let lastChar = display.value.slice(-1);
+      if (display.value.slice(0) === "0") {
+        display.value = "(";
+        countsyntax++;
+        return;
+      }
       if (countsyntax > 0 && /[0-9\)]/.test(lastChar)) {
         display.value += ")";
         countsyntax--;
