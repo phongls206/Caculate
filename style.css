@@ -249,6 +249,7 @@ body {
   }
   .caculator-main.active::after {
     top: -40%;
+    width: 10px;
     padding-right: 8px;
     font-size: 24px;
   }
@@ -258,7 +259,7 @@ body {
     margin-top: 50px;
   }
   #caculator-display {
-    font-size: 20px;
+    font-size: 16px;
   }
   .caculator-main {
     gap: 8px;
