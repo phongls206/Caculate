@@ -400,7 +400,8 @@ body {
     margin-top: 50px;
   }
   #caculator-display {
-    font-size: 20px;
+    max-width: 85%;
+    font-size: 18px;
     padding-right: 6px;
   }
   .caculator-main {
@@ -416,6 +417,6 @@ body {
     scale: 0.6;
   }
   .error {
-    font-size: 15px !important;
+    font-size: 18px !important;
   }
 }
