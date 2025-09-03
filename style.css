@@ -237,17 +237,6 @@ body {
 .error {
   animation: rainbow 2s infinite;
 }
-/* Banner responsive */
-@media (max-width: 768px) {
-  .banner {
-    width: calc(100% - 10px);
-    height: 40px;
-    border-radius: 15px;
-  }
-  .banner h1 {
-    font-size: 16px;
-  }
-}
 
 @media (max-width: 480px) {
   .banner {
@@ -258,9 +247,6 @@ body {
     font-size: 14px;
     letter-spacing: 3px;
   }
-}
-
-@media (max-width: 480px) {
   .caculator-main.active::after {
     top: -40%;
     padding-right: 8px;
@@ -272,7 +258,7 @@ body {
     margin-top: 50px;
   }
   #caculator-display {
-    font-size: 16px;
+    font-size: 20px;
   }
   .caculator-main {
     gap: 8px;
