@@ -49,7 +49,6 @@ power.addEventListener("click", () => {
     display.value = "Power Off";
     music.pause();
     active = false;
-
     caculatorMain.classList.remove("active");
     setTimeout(() => {
       display.value = "";
