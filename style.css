@@ -238,40 +238,6 @@ body {
   animation: rainbow 2s infinite;
 }
 
-@media (max-width: 480px) {
-  .banner {
-    height: 35px;
-    border-radius: 10px;
-  }
-  .banner h1 {
-    font-size: 14px;
-    letter-spacing: 3px;
-  }
-  .caculator-main.active::after {
-    top: -40%;
-    width: 10px;
-    padding-right: 8px;
-    font-size: 24px;
-  }
-  .caculator {
-    width: 180px;
-    height: 280px;
-    margin-top: 50px;
-  }
-  #caculator-display {
-    font-size: 16px;
-  }
-  .caculator-main {
-    gap: 8px;
-    column-gap: 15px;
-  }
-  .caculator-icon {
-    min-height: 18px;
-    text-align: center;
-    font-size: 10px;
-  }
-}
-
 /* .caculator::after {
   position: absolute;
   background: linear-gradient(180deg, #eba6c2, #ff85c1, #ff91d0);
@@ -410,5 +376,42 @@ body {
     box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
       rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
       rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  }
+}
+@media (max-width: 480px) {
+  .banner {
+    height: 35px;
+    border-radius: 10px;
+  }
+  .banner h1 {
+    font-size: 14px;
+    letter-spacing: 3px;
+  }
+  .caculator-main.active::after {
+    top: -36%;
+    padding-right: 8px;
+    font-size: 24px;
+    bottom: 2%;
+  }
+  .caculator {
+    width: 180px;
+    height: 280px;
+    margin-top: 50px;
+  }
+  #caculator-display {
+    font-size: 20px;
+    padding-right: 6px;
+  }
+  .caculator-main {
+    gap: 8px;
+    column-gap: 15px;
+  }
+  .caculator-icon {
+    min-height: 18px;
+    text-align: center;
+    font-size: 10px;
+  }
+  .on-power {
+    scale: 0.6;
   }
 }
