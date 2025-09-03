@@ -235,6 +235,9 @@ body {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .error {
+  font-size: 30px !important;
+  text-align: center !important;
+  padding-bottom: 50px !important;
   animation: rainbow 2s infinite;
 }
 

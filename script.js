@@ -8,12 +8,12 @@ console.log("KOMODO CACULATOR DEMO");
 // 👉 Dùng khi cần: đồng hồ, xoá liên tục, cập nhật trạng thái... Nếu muốn kiểm soát tốt hơn, dùng setTimeout() tự gọi lại.
 // Lặp liên tục cho đến khi bị dừng bằng clearInterval().
 
-setTimeout(() => {
-  alert("Đây là bản demo");
-}, 5000);
-setTimeout(() => {
-  alert("Sau này sẽ nâng cấp thêm tính năng");
-}, 8000);
+// setTimeout(() => {
+//   alert("Đây là bản demo");
+// }, 5000);
+// setTimeout(() => {
+//   alert("Sau này sẽ nâng cấp thêm tính năng");
+// }, 8000);
 
 const display = document.getElementById("caculator-display");
 const btn = document.querySelectorAll(".caculator-icon");
@@ -89,7 +89,9 @@ btn.forEach((element) => {
       display.value += "/";
       return;
     }
-    if (data === "Del") {
+    if (display.value === "Error") {
+      data = "";
+    } else if (data === "Del") {
       display.value = display.value.slice(0, -1);
     } else if (data === "AC") {
       display.value = "";
@@ -101,18 +103,23 @@ btn.forEach((element) => {
         } catch {
           display.value = "Error";
           display.classList.add("error");
+          caculatorMain.classList.remove("active");
           setTimeout(() => {
             display.value = "";
             display.classList.remove("error");
+            caculatorMain.classList.add("active");
           }, 1000);
         }
       }
     } else {
       if (display.value === "0") {
         display.value = data;
-      } else {
-        display.value += data;
+        return;
       }
+      if (display.value === "Error") {
+        return;
+      }
+      display.value += data;
     }
     display.scrollLeft = display.scrollWidth;
     // Giai thich lenh nay
