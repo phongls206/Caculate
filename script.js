@@ -19,6 +19,8 @@ const display = document.getElementById("caculator-display");
 const btn = document.querySelectorAll(".caculator-icon");
 const power = document.getElementById("power-btn");
 const caculatorMain = document.querySelector(".caculator-main");
+const anh1 = power.querySelector("img");
+const music = document.getElementById("music");
 let data = "";
 let countsyntax = 0;
 let active = false;
@@ -28,23 +30,30 @@ power.addEventListener("click", () => {
   if (!active) {
     display.value = "Komodo is start...";
     boot = true;
+
     setTimeout(() => {
       display.value = "Power-On";
+      music.currentTime = 0;
+      music.play();
     }, 5000);
     setTimeout(() => {
       display.value = "0";
       active = true;
       boot = false;
-      power.style.animation = "rainbow 2s infinite";
+
+      anh1.style.animation =
+        "rainbow2 2s infinite alternate,rotate 2s linear infinite";
       caculatorMain.classList.add("active");
     }, 6000);
   } else {
     display.value = "Power Off";
+    music.pause();
     active = false;
+
     caculatorMain.classList.remove("active");
     setTimeout(() => {
       display.value = "";
-      power.style.animation = "none";
+      anh1.style.animation = "none";
     }, 2000);
   }
 });
