@@ -420,8 +420,8 @@ body {
     font-size: 22px !important;
   }
 }
-@media (min-height: 1200px) {
+@media (min-height: 1000px) {
   .caculator {
-    width: 60vh;
+    min-height: 19vh;
   }
 }
