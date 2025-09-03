@@ -236,8 +236,6 @@ body {
 }
 .error {
   font-size: 30px !important;
-  text-align: center !important;
-  padding-bottom: 50px !important;
   animation: rainbow 2s infinite;
 }
 
